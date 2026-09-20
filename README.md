@@ -1,4 +1,6 @@
-# Traffic-light research replication
+# GarSef
+
+GarSef project: traffic-light research replication.
 
 Completed independent replication attempt: SUMO 1.26.0, 36 fresh training episodes,
 and 500 evaluation trials. Read [REPLICATION_REPORT.md](REPLICATION_REPORT.md).
