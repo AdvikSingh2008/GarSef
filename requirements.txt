@@ -1,0 +1,8 @@
+eclipse-sumo==1.26.0
+sumo-data==1.26.0
+libsumo==1.26.0
+traci==1.26.0
+sumolib==1.26.0
+numpy==2.5.3
+scipy==1.18.1
+matplotlib==3.11.2

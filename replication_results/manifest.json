@@ -1,0 +1,75 @@
+{
+  "simulator": [
+    22,
+    "SUMO 1.26.0"
+  ],
+  "packages": {
+    "eclipse-sumo": "1.26.0",
+    "sumo-data": "1.26.0",
+    "libsumo": "1.26.0",
+    "traci": "1.26.0",
+    "sumolib": "1.26.0",
+    "numpy": "2.5.3",
+    "scipy": "1.18.1",
+    "matplotlib": "3.11.2"
+  },
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "loads": [
+    50,
+    100,
+    200,
+    300,
+    450,
+    600,
+    800,
+    1000,
+    1300,
+    1700
+  ],
+  "controllers": [
+    "fixed",
+    "actuated",
+    "max_pressure",
+    "qlearning",
+    "pgql"
+  ],
+  "training_seeds": "1000 + episode, independently for each learner",
+  "training_loads": [
+    150,
+    250,
+    400,
+    600,
+    800
+  ],
+  "training_episodes": {
+    "qlearning": 20,
+    "pgql": 16
+  },
+  "training_epsilon": "linear 0.30 to 0.05 inclusive (paper specification)",
+  "evaluation_epsilon": 0.02,
+  "occupancy_window": "integer simulation times 200 through 1400 inclusive; zeros after early completion",
+  "pgql": "Reconstructed from manuscript; action 2 chooses the non-expert green",
+  "source_sha256": {
+    "run_one.py": "15114e128153f63e905c89b91929c6c76540bb03d9662c21ae08a294aec5e7e4",
+    "replicate.py": "fa8a05e5a0dcdff34cc551ef5df6cc834365138e7016dfab84fee5d5d5d3d963",
+    "net\\grid3x3.net.xml": "9cdaaa94aec877442338a165b0ff3c91a899a49bc00e450baa0401b5509205b7",
+    "controllers\\__init__.py": "e23c231b75c554afe34d732e28a0ff0681ea3d320f33bdcc0c21bc520bd5de8b",
+    "controllers\\actuated.py": "5da9f03655ef2810bc887e944da04a5ccb9df708c781788eb01bdd5cccf0f4bf",
+    "controllers\\base.py": "a2132b0d790999462181c91413e32d7e844d6303e02fff6678b854f98d11acb5",
+    "controllers\\fixed.py": "557aa5c9e8096e3360bfd4a08a9bc9e999b251f2a0236f39d9dfbb802d9077fc",
+    "controllers\\max_pressure.py": "c54891f1e6c2ef6599825c9b3d7e5d7e2b33dff5a8449636fdf7bd6d0a2c57f6",
+    "controllers\\pgql.py": "a68d4975441d8f60a00f6a86e82f39fbac3066631e5dbe8a4d5aef9d91e211d7",
+    "controllers\\qlearning.py": "86befdd3ef95e2dc94b65a299f42790c2a743e30157ab8ec095bd7014edd227e"
+  }
+}

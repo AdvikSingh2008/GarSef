@@ -1,0 +1,99 @@
+[
+  {
+    "check": "untrained PGQL epsilon=0 equals MP",
+    "n": 50,
+    "seed": 2,
+    "metrics": {
+      "placed": 50,
+      "completed": 50,
+      "mwt": 7.1,
+      "mean_time_loss": 24.6864,
+      "mean_in_system": 3.646128226477935,
+      "departed": 50
+    },
+    "passed": true
+  },
+  {
+    "check": "untrained PGQL epsilon=0 equals MP",
+    "n": 200,
+    "seed": 0,
+    "metrics": {
+      "placed": 200,
+      "completed": 200,
+      "mwt": 7.19,
+      "mean_time_loss": 25.1845,
+      "mean_in_system": 13.375520399666945,
+      "departed": 200
+    },
+    "passed": true
+  },
+  {
+    "check": "untrained PGQL epsilon=0 equals MP",
+    "n": 800,
+    "seed": 4,
+    "metrics": {
+      "placed": 800,
+      "completed": 797,
+      "mwt": 63.3375156838143,
+      "mean_time_loss": 129.27930991217065,
+      "mean_in_system": 121.85345545378851,
+      "departed": 797
+    },
+    "passed": true
+  },
+  {
+    "check": "untrained PGQL epsilon=0 equals MP",
+    "n": 1300,
+    "seed": 3,
+    "metrics": {
+      "placed": 1300,
+      "completed": 249,
+      "mwt": 80.6144578313253,
+      "mean_time_loss": 160.69385542168672,
+      "mean_in_system": 450.6527893422148,
+      "departed": 835
+    },
+    "passed": true
+  },
+  {
+    "check": "untrained PGQL epsilon=0 equals MP",
+    "n": 1700,
+    "seed": 9,
+    "metrics": {
+      "placed": 1700,
+      "completed": 176,
+      "mwt": 87.78977272727273,
+      "mean_time_loss": 173.04880681818182,
+      "mean_in_system": 521.2497918401332,
+      "departed": 783
+    },
+    "passed": true
+  },
+  {
+    "check": "exact deterministic rerun",
+    "controller": "fixed",
+    "n": 200,
+    "seed": 0,
+    "passed": true
+  },
+  {
+    "check": "exact deterministic rerun",
+    "controller": "qlearning",
+    "n": 800,
+    "seed": 2,
+    "passed": true
+  },
+  {
+    "check": "exact deterministic rerun",
+    "controller": "pgql",
+    "n": 1300,
+    "seed": 4,
+    "passed": true
+  },
+  {
+    "check": "recovered legacy deterministic results comparison",
+    "comparisons": 90,
+    "exact_matches": 90,
+    "maximum_absolute_mwt_difference": 0.0
+  }
+]
